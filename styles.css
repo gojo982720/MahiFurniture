@@ -1,0 +1,396 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    color: yellow;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Link styles */
+a {
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Background animation */
+.back {
+    background: url('Images/back2.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    animation: changeimg 50s linear infinite;
+}
+
+/* Home section styles */
+#home {
+    padding: 30px 0;
+    text-align: center;
+    color: yellow;
+}
+
+/* Animation styles */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Services section styles */
+#services {
+    padding: 30px 0;
+}
+
+.service {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Contact section styles */
+#contact {
+    padding: 30px 0;
+    background: #e2e2e2;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #555;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Team section styles */
+.team {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 20px auto;
+    font-family: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+.card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+}
+
+.card img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: #e8e8e8;
+    border-radius: 50%;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+.card a {
+    width: 60%;
+    padding: 8px 25px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    border: none;
+    background: #e8e8e8;
+    color: #111111;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Image section styles */
+.images {
+    padding: 30px;
+}
+
+.img {
+    padding: 30px;
+    border: #333333 2px solid;
+    border-radius: 10%;
+    height: 180px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    padding: 1px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 0 0 10% 10%;
+}
+
+/* Fixed element styles */
+.fix {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Trigger section styles */
+.trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 20px 1px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, #0f1260ea 0%, #2b566e 100%);
+}
+
+/* Additional animations */
+.heart {
+    display: inline-block;
+    animation: pulse 1s infinite;
+    color: green;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes changeimg {
+    0% {
+        background-image: url('Images/back1.jpeg');
+    }
+
+    10% {
+        background-image: url('Images/back1.jpeg');
+    }
+
+    20% {
+        background-image: url('Images/back1.jpeg');
+    }
+
+    21% {
+        background-image: url('Images/back2.jpg');
+    }
+
+    30% {
+        background-image: url('Images/back2.jpg');
+    }
+
+    40% {
+        background-image: url('Images/back2.jpg');
+    }
+
+    41% {
+        background-image: url('Images/back3.jpeg');
+    }
+
+    50% {
+        background-image: url('Images/back3.jpeg');
+    }
+
+    60% {
+        background-image: url('Images/back3.jpeg');
+    }
+
+    61% {
+        background-image: url('Images/back4.jpeg');
+    }
+
+    70% {
+        background-image: url('Images/back4.jpeg');
+    }
+
+    80% {
+        background-image: url('Images/back4.jpeg');
+    }
+
+    81% {
+        background-image: url('Images/back5.jpeg');
+    }
+
+    90% {
+        background-image: url('Images/back5.jpeg');
+    }
+
+    100% {
+        background-image: url('Images/back5.jpeg');
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
