@@ -8,14 +8,15 @@
     <meta name="description"
         content="Mahi Furniture Services offers custom furniture and repair services in Indore. Quality craftsmanship and customer satisfaction are our top priorities.">
     <meta name="keywords" content="Mahi Furniture, Custom Furniture, Furniture Repair, Indore Furniture">
+    <meta name="author" content="Mahi Furniture Services">
     <title>Mahi Furniture Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main class="back">
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -23,18 +24,19 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="container">
+            <div class="container head-container">
                 <h1 class="fade-in">Mahi Furniture Services</h1>
-                <a href="tel:+91 99777 76994">&phone; Call 99777 76994</a><br>
-                <a href="mailto:mahifurniture@gmail.com">&#x1F4E7; mahifurniture@gmail.com</a>
+                <div class="head-contact-links">
+                    <a href="tel:+91 99777 76994">&phone; Call 99777 76994</a><br>
+                    <a href="mailto:mahifurniture@gmail.com">&#x1F4E7; mahifurniture@gmail.com</a>
+                </div>
             </div>
-            <a class="fix" href="tel: 99777 76994"><img src="Images/t.png" alt="Call Us"></a>
+            <a class="fix call-now-btn" href="tel: 99777 76994">CALL NOW</a>
         </header>
         <section id="home">
             <div class="container slide-in-left">
-                <h2>Welcome to Mahi Furniture Services</h2>
-                <h4>We offer custom furniture and repair services in <span>INDORE</span>. Quality craftsmanship and
-                    customer satisfaction are our top priorities.</h4>
+                <h1>Welcome to Mahi Furniture Services</h1>
+                <h3>We offer custom furniture and repair services in Indore.</h3>
             </div>
         </section>
     </main>
@@ -47,20 +49,37 @@
         </a>
     </section>
 
-    <section id="products" class="images">
-        <div class="img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
-                href="sofa.html"><img src="Images/s2.jpeg" alt="Sofa"><span class="text">SOFA</span></a></div><br><br>
-        <div class="img" data-aos="fade-down-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
-                href="bed.html"><img src="Images/b2.jpeg" alt="Bed"><span class="text">BED</span></a></div><br><br>
-        <div class="img" data-aos="fade-down-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
-                href="kitchen.html"><img src="Images/k3.jpeg" alt="Kitchen Decoratives"><span class="text">KITCHEN
-                    DECORATIVES</span></a></div><br><br>
-        <div class="img" data-aos="fade-down-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
-                href="hall.html"><img src="Images/h8.jpeg" alt="Hall Decoratives"><span class="text">HALL
-                    DECORATIVES</span></a></div><br><br>
+
+    <section id="products">
+        <div class="images">
+            <div class="img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                id="polygon-left-1">
+                <div class="polygon"></div>
+            </div>
+            <h1 class="type h1-animation" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                Luxury Furniture's...</h1>
+
+            <h1 class="type h1-animation-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                Unique Designs...</h1>
+            <div class="img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                id="polygon-right-2">
+                <div class="polygon"></div>
+            </div>
+
+            <div class="img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                id="polygon-left-3">
+                <div class="polygon"></div>
+            </div>
+            <h1 class="type h1-animation-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                Best Services...</h1>
+        </div>
+
+
     </section>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 
+    <h1>Team</h1>
 
     <section class="team">
         <div data-aos="fade-down-left" class="card">
@@ -121,23 +140,30 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container slide-in-up">
+    <!--<section id="contact">
+         <div class="container slide-in-up">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form action="https://api.web3forms.com/submit" method="POST">
 
-                <label for="number">Number:</label>
-                <input type="number" id="number" name="number" required>
+                
+                <input type="hidden" name="access_key" value="98c0a3de-752c-4944-b296-d39707d4b677">
 
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" required></textarea>
+               
+                <input type="text" name="name" required>
+                <input type="number" name="number" required>
+                <textarea name="message" required></textarea>
 
-                <button type="submit" class="bounce">Send</button>
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                
+                <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+
+                <button type="submit">Submit Form</button>
+
             </form>
-        </div>
-    </section>
+        </div> 
+    </section> -->
 
     <footer>
         <div class="container">
@@ -145,11 +171,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
 
 </html>
